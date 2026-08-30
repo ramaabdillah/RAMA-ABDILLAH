@@ -1,0 +1,60 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="512" height="512">
+  <defs>
+    <linearGradient id="bg-grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#047857" />
+      <stop offset="50%" stop-color="#065f46" />
+      <stop offset="100%" stop-color="#064e3b" />
+    </linearGradient>
+    <linearGradient id="compass-grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#34d399" />
+      <stop offset="100%" stop-color="#10b981" />
+    </linearGradient>
+    <linearGradient id="star-grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#fde047" />
+      <stop offset="100%" stop-color="#fbbf24" />
+    </linearGradient>
+    <filter id="shadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="8" stdDeviation="12" flood-color="#022c22" flood-opacity="0.5" />
+    </filter>
+  </defs>
+
+  <!-- Background Rounded Rect for App Icon -->
+  <rect width="512" height="512" rx="112" fill="url(#bg-grad)" />
+  
+  <!-- Subtle Outer Ring -->
+  <circle cx="256" cy="256" r="190" fill="none" stroke="#6ee7b7" stroke-width="4" stroke-opacity="0.3" stroke-dasharray="12 8" />
+  
+  <!-- Inner Glow Ring -->
+  <circle cx="256" cy="256" r="160" fill="#064e3b" fill-opacity="0.6" stroke="#34d399" stroke-width="8" filter="url(#shadow)" />
+
+  <!-- Compass Cardinal Markers -->
+  <circle cx="256" cy="116" r="6" fill="#fde047" />
+  <circle cx="396" cy="256" r="6" fill="#6ee7b7" />
+  <circle cx="256" cy="396" r="6" fill="#6ee7b7" />
+  <circle cx="116" cy="256" r="6" fill="#6ee7b7" />
+
+  <!-- Compass Dial Lines -->
+  <path d="M 256 130 L 256 150 M 256 362 L 256 382 M 130 256 L 150 256 M 362 256 L 382 256" stroke="#a7f3d0" stroke-width="4" stroke-linecap="round" />
+
+  <!-- Compass Star Needle (North Pointer - Gold) -->
+  <polygon points="256,145 285,256 256,238" fill="url(#star-grad)" />
+  <polygon points="256,145 227,256 256,238" fill="#f59e0b" />
+
+  <!-- Compass Star Needle (South Pointer - Cyan/Teal) -->
+  <polygon points="256,367 285,256 256,274" fill="#10b981" />
+  <polygon points="256,367 227,256 256,274" fill="#047857" />
+
+  <!-- East & West Needles -->
+  <polygon points="367,256 256,227 274,256" fill="#34d399" />
+  <polygon points="367,256 256,285 274,256" fill="#059669" />
+  <polygon points="145,256 256,227 238,256" fill="#34d399" />
+  <polygon points="145,256 256,285 238,256" fill="#059669" />
+
+  <!-- Center Pivot Core Pin -->
+  <circle cx="256" cy="256" r="22" fill="#ffffff" filter="url(#shadow)" />
+  <circle cx="256" cy="256" r="14" fill="#047857" />
+  <circle cx="256" cy="256" r="6" fill="#fde047" />
+
+  <!-- Star Sparkle on North -->
+  <path d="M 256 120 Q 256 135 245 135 Q 256 135 256 150 Q 256 135 267 135 Q 256 135 256 120" fill="#ffffff" />
+</svg>

@@ -1,0 +1,19 @@
+{
+  "short_name": "Peta Karirku",
+  "name": "Peta Karirku - BK SMK",
+  "description": "Aplikasi Interaktif Bimbingan Klasikal BK SMK untuk Identifikasi Pilihan Karir Siswa.",
+  "icons": [
+    {
+      "src": "/icon.svg",
+      "type": "image/svg+xml",
+      "sizes": "192x192 512x512 any",
+      "purpose": "any maskable"
+    }
+  ],
+  "start_url": "/?source=pwa",
+  "background_color": "#064e3b",
+  "theme_color": "#064e3b",
+  "display": "standalone",
+  "orientation": "portrait",
+  "categories": ["education", "productivity"]
+}
